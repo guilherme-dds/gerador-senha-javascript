@@ -29,10 +29,10 @@
           </div>
           <div class="actions">
             <button id="copy-1">
-              <img src="copy.svg" width="42" alt="" />
+              <img src="/src/copy.svg" width="42" alt="" />
             </button>
             <button id="renew">
-              <img src="renew.svg" width="42" alt="" />
+              <img src="/src/renew.svg" width="42" alt="" />
             </button>
           </div>
         </div>
@@ -82,41 +82,6 @@
 
       <button id="copy-2">Copiar senha</button>
     </main>
-    <script>
-      let passwordLength = 16;
-      const inputEl = document.querySelector("#password");
-
-      function generatePassword() {
-        const chars =
-          "abcdefghjklmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789?!@&*()[]";
-
-        let password = "";
-
-        for (let i = 0; i < passwordLength; i++) {
-          const randoNumber = Math.floor(Math.random() * chars.length);
-          password += chars.substring(randoNumber, randoNumber + 1);
-        }
-
-        inputEl.value = password;
-      }
-
-      function copy() {
-        navigator.clipboard.writeText(inputEl.value);
-      }
-
-      const passwordLengthEl = document.querySelector("#password-length");
-      passwordLengthEl.addEventListener("input", function () {
-        passwordLength = passwordLengthEl.value;
-        generatePassword();
-      });
-
-      const copyButtonEl1 = document.querySelector("#copy-1");
-      copyButtonEl1.addEventListener("click", copy);
-
-      const copyButtonEl2 = document.querySelector("#copy-2");
-      copyButtonEl2.addEventListener("click", copy);
-
-      generatePassword();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
