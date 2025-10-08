@@ -106,11 +106,24 @@ numberCheckEl.addEventListener("click", generatePassword);
 symbolCheckEl.addEventListener("click", generatePassword);
 
 const copyButtonEl1 = document.querySelector("#copy-1");
-copyButtonEl1.addEventListener("click", copy);
+copyButtonEl1.addEventListener("click", () => {
+  copy();
+  alert();
+});
 
 const copyButtonEl2 = document.querySelector("#copy-2");
-copyButtonEl2.addEventListener("click", copy);
+copyButtonEl2.addEventListener("click", () => {
+  copy();
+  alert();
+});
 
 document.querySelector("#renew").addEventListener("click", generatePassword);
+
+function alert() {
+  document.querySelector("#alert").classList.add("show");
+  setTimeout(() => {
+    document.querySelector("#alert").classList.remove("show");
+  }, 2000);
+}
 
 generatePassword();

@@ -242,6 +242,21 @@ main {
   background-color: #9b51e0;
 }
 
+.alert {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.alert span {
+  font-size: 17px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.alert span.show {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 480px) {
   .password {
     padding: 1rem;
