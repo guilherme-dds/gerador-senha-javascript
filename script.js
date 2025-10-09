@@ -6,6 +6,7 @@ const symbolCheckEl = document.querySelector("#symbol-check");
 const securityIndicatorBarEl = document.querySelector(
   "#security-indicator-bar"
 );
+
 function generatePassword() {
   let chars = "abcdefghjklmnpqrstuvwxyz";
 
@@ -123,7 +124,7 @@ function alert() {
   document.querySelector("#alert").classList.add("show");
   setTimeout(() => {
     document.querySelector("#alert").classList.remove("show");
-  }, 2000);
+  }, 3000);
 }
 
 generatePassword();
