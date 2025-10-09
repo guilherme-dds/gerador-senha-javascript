@@ -22,7 +22,7 @@ Permite criar senhas fortes e seguras com personalização de tamanho e tipos de
 - Geração automática de senhas seguras
 - Personalização do tamanho da senha (4 a 64 caracteres)
 - Inclusão opcional de letras maiúsculas, números e símbolos
-- Barra indicadora de segurança da senha
+- Barra indicadora de segurança da senha gerada
 - Botões para copiar e gerar nova senha rapidamente
 - Feedback visual ao copiar a senha
 
